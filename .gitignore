@@ -1,0 +1,10 @@
+# Python 3 venv files and directories
+bin/*
+etc/*
+lib*
+share/*
+pyvenv.cfg
+
+# Files created by the installer
+jupyterlab.desktop
+octave-cli-wrapper
