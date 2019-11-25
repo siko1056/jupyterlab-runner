@@ -1,0 +1,21 @@
+#!/usr/bin/env xdg-open
+[Desktop Entry]
+Categories=Development;
+Comment[en_US]=Web-based user interface for Project Jupyter
+Comment=Web-based user interface for Project Jupyter
+Exec=PATH/start_jupyterlab.sh
+GenericName[en_US]=JupyterLab
+GenericName=JupyterLab
+Icon=PATH/jupyter.ico
+MimeType=
+Name[en_US]=JupyterLab
+Name=JupyterLab
+Path=
+StartupNotify=true
+Terminal=false
+TerminalOptions=
+Type=Application
+X-DBUS-ServiceName=
+X-DBUS-StartupType=
+X-KDE-SubstituteUID=false
+X-KDE-Username=
