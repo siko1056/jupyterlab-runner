@@ -7,7 +7,7 @@ if [ ! -d "$SCRIPT_DIR/bin" ] || [ ! -f "$SCRIPT_DIR/bin/activate" ]; then
   python3 -m venv $SCRIPT_DIR
   cp jupyterlab.desktop.in jupyterlab.desktop
   sed -i "s|PATH|$SCRIPT_DIR|g" jupyterlab.desktop
-  ln -sf jupyterlab.desktop $HOME/.local/share/applications
+  ln -sf $SCRIPT_DIR/jupyterlab.desktop $HOME/.local/share/applications
   ln -sf $(which octave) octave-cli-wrapper
   DO_UPDATE=true
 fi
