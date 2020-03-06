@@ -16,8 +16,7 @@ source $SCRIPT_DIR/bin/activate
 
 if [ "$1" = "update" ] || [ "$DO_UPDATE" = "true" ]; then
   pip install --upgrade pip jupyterlab octave_kernel \
-                        numpy sympy matplotlib keras tensorflow \
-                        jupyter-book
+                        numpy sympy matplotlib keras tensorflow
 fi
 
 export OCTAVE_EXECUTABLE=$SCRIPT_DIR/octave-cli-wrapper
