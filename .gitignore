@@ -7,4 +7,5 @@ pyvenv.cfg
 
 # Files created by the installer
 jupyterlab.desktop
-octave-cli-wrapper
+octave-cli-jupyter
+gnu_octave_*.sif

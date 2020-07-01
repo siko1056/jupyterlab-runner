@@ -1,6 +1,6 @@
 # Integrate [JupyterLab](https://jupyter.org/) into the Linux desktop.
 
-This project is not an offical Jupyter project.
+This project is not an official Jupyter project.
 
 By running the BASH script on common Linux systems
 
@@ -12,8 +12,11 @@ alongside with the [octave_kernel](https://github.com/Calysto/octave_kernel).
 
 The final setup can be easily launched from the distribution's start menu.
 
-[GNU Octave](https://www.octave.org) is assumed to be already installed
-and available from the command line by running the `octave`-command.
+[GNU Octave](https://www.octave.org) will be installed using a
+[Singularity image](https://cloud.sylabs.io/library/siko1056/default/gnu_octave).
+Thus [Singularity](https://sylabs.io/singularity/) must be installed on the
+system.
+
 
 ## Launcher icon
 
