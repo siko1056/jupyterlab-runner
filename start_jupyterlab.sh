@@ -12,6 +12,12 @@ if [ ! -x "$(command -v singularity)" ]; then
     exit
 fi
 
+# Check for Node.js to be installed.
+if [ ! -x "$(command -v node)" ]; then
+    echo -e "\n Node.js is not installed, please install it.\n"
+    exit
+fi
+
 # Check for existing python environment.
 if [ ! -d "$SCRIPT_DIR/bin" ] || [ ! -f "$SCRIPT_DIR/bin/activate" ]; then
   python3 -m venv $SCRIPT_DIR
@@ -23,7 +29,9 @@ source $SCRIPT_DIR/bin/activate
 # Update python environment, if necessary or requested.
 if [ "$1" = "update" ] || [ "$DO_UPDATE" = "true" ]; then
   pip install --upgrade pip jupyterlab octave_kernel \
+                        jupytext jupyter-book \
                         numpy sympy==1.5.1 matplotlib keras tensorflow
+  jupyter lab build
 fi
 
 # Create Desktop launcher.
