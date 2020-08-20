@@ -29,7 +29,7 @@ source $SCRIPT_DIR/bin/activate
 # Update python environment, if necessary or requested.
 if [ "$1" = "update" ] || [ "$DO_UPDATE" = "true" ]; then
   pip install --upgrade pip jupyterlab octave_kernel \
-                        jupytext jupyter-book \
+                        jupytext jupyter-book ghp-import \
                         numpy sympy==1.5.1 matplotlib keras tensorflow
   jupyter lab build
 fi
